@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Hridoy Ahmed</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="jscript.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="bg-blue-800 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center py-3 px-4">
+                <!-- HR Logo Start -->
+            <a href="#" class="flex items-center space-x-2">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-md ring-2 ring-blue-400">
+                    <span class="text-blue-800 font-extrabold text-xl">HR</span>
+                </span>
+            </a>
+            <!-- HR Logo End -->
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <ul id="nav-links" class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="text-white hover:text-blue-300 transition">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-blue-300 transition">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#home" class="text-white hover:text-blue-300 transition">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-blue-300 transition">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-300 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+
+    <!-- Hero / Cover Image Section -->
+    <section id="home" class="relative h-[400px] md:h-[600px] flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-black/60 to-blue-700/60"></div>
+        <div class="relative z-10 text-center max-w-2xl mx-auto px-4">
+            <img src="image\unnamed.png" alt="Profile" class="mx-auto mb-6 w-28 h-28 rounded-full border-4 border-white shadow-lg ring-4 ring-blue-400/30 object-cover">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg tracking-tight">
+                Hi, I'm <span class="text-blue-300">Hridoy Ahmed</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-6 font-medium">
+                CSE Student • Data Science Enthusiast • Full-Stack Developer
+            </p>
+            <p class="text-base md:text-lg text-gray-100 mb-8">
+                Passionate about data science, machine learning, and building modern web solutions.<br>
+                <span class="hidden md:inline">Projects in IoT, AI, and web development.</span>
+            </p>
+            <a href="#about" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                Explore My Work
+            </a>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+            <svg class="w-8 h-8 text-blue-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Card Section -->
+   <section id="about" class="container mx-auto py-12 px-4">
+    <h2 class="text-3xl font-extrabold text-center mb-10 text-blue-800 tracking-tight">Our Services</h2>
+    <div class="grid gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        <!-- Card 1 -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg overflow-hidden border border-blue-100 hover:shadow-2xl transition transform hover:-translate-y-2 group">
+            <div class="relative">
+                <img src="image/18492953_5918353.jpg" alt="Web Design" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <span class="absolute top-4 left-4 bg-white/90 rounded-full p-2 shadow text-blue-600">
+                    <!-- Paint Brush Icon -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 13l6-6 3 3-6 6H9v-3z"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-blue-800">Web Design</h3>
+                <p class="text-gray-600 mb-4">Modern and responsive web design services to make your business stand out.</p>
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More &rarr;</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg overflow-hidden border border-blue-100 hover:shadow-2xl transition transform hover:-translate-y-2 group">
+            <div class="relative">
+                <img src="image/18707.jpg" alt="Development" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <span class="absolute top-4 left-4 bg-white/90 rounded-full p-2 shadow text-blue-600">
+                    <!-- Code Icon -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 18V6M8 18V6"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-blue-800">Development</h3>
+                <p class="text-gray-600 mb-4">Robust and scalable web development solutions for your growing needs.</p>
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More &rarr;</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg overflow-hidden border border-blue-100 hover:shadow-2xl transition transform hover:-translate-y-2 group">
+            <div class="relative">
+                <img src="image/8433557_2380.jpg" alt="SEO Marketing" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <span class="absolute top-4 left-4 bg-white/90 rounded-full p-2 shadow text-blue-600">
+                    <!-- Trending Up Icon -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8"/>
+                    </svg>
+                </span>
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-blue-800">SEO & Marketing</h3>
+                <p class="text-gray-600 mb-4">Boost your online presence with our expert SEO and marketing strategies.</p>
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Learn More &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Form Section -->
+    <section id="contact" class="container mx-auto py-10 px-4">
+        <h2 class="text-2xl font-bold text-center mb-8">Contact Us</h2>
+        <form id="contactForm" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md space-y-6">
+            <div>
+                <label for="name" class="block font-semibold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            </div>
+            <div>
+                <label for="email" class="block font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            </div>
+            <div>
+                <label for="message" class="block font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-700 text-white font-semibold py-2 rounded hover:bg-blue-800 transition">Send Message</button>
+            <div id="formSuccess" class="hidden text-green-600 font-semibold text-center mt-4">Your message has been saved!</div>
+            <div id="formError" class="hidden text-red-600 font-semibold text-center mt-4"></div>
+            <div id="savedData" class="hidden bg-blue-50 border border-blue-200 rounded p-4 mt-4"></div>
+        </form>
+    </section>
+
+    <footer class="bg-blue-800 text-white text-center py-4 mt-10">  
+        &copy; 2025 <a href="https://www.facebook.com/hridoy.ahmed.807039">Md Hridoy Ahmed</a>. All rights reserved.
+    </footer>
+     
+    
+        
+</body>
+
+</html>
+
